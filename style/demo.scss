@@ -1,0 +1,51 @@
+@import"./mixins";
+*{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+#main{
+
+    #post{
+
+        .post__content{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 10%;
+
+            @include mobile{
+                flex-wrap: wrap;
+                
+              }
+
+            &__img{
+              .img-fon{
+                position:absolute;
+                z-index: -1;
+              }
+              .img-user{
+               position: relative;
+               right: 8%;
+                
+              }
+            }
+            &__title{
+              display: flex;
+              line-height: 30px;
+              letter-spacing: 3px;
+
+              @include mobile{
+                margin-top: 20%;
+              }
+
+              }
+
+              .post__content__text{
+                .text-color{
+                    color: #23A6F0;
+                }
+              }
+              
+            }
+        }
+    }
